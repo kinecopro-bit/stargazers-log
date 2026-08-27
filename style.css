@@ -1,0 +1,58 @@
+:root {
+  color-scheme: light;
+  --ink: #17221d;
+  --muted: #68756e;
+  --line: #d9e2dc;
+  --paper: #f5f7f2;
+  --card: #ffffff;
+  --accent: #e35d3f;
+  --accent-soft: #fff0ea;
+  --green: #32735a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.page-shell {
+  width: min(100% - 40px, 780px);
+  margin: 0 auto;
+  padding: 72px 0 80px;
+}
+
+.page-header { margin-bottom: 56px; }
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font: 700 0.75rem/1.2 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1, h2, p { margin-top: 0; }
+h1 { margin-bottom: 16px; font-size: clamp(3rem, 8vw, 5.5rem); line-height: 0.95; font-weight: 400; }
+.intro { max-width: 420px; margin-bottom: 0; color: var(--muted); font-size: 1.15rem; line-height: 1.5; }
+.section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; border-bottom: 2px solid var(--ink); padding-bottom: 14px; }
+h2 { margin-bottom: 0; font-size: 1.35rem; font-weight: 400; }
+.count { color: var(--muted); font: 700 0.72rem 'Trebuchet MS', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+.repository-list { display: grid; gap: 12px; padding-top: 12px; }
+.repository { display: block; padding: 22px 24px; border: 1px solid var(--line); border-radius: 4px; background: var(--card); text-decoration: none; color: inherit; transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease; }
+.repository:hover, .repository:focus-visible { border-color: var(--accent); box-shadow: 0 8px 18px rgba(23, 34, 29, 0.08); transform: translateY(-2px); }
+.repository-name { margin-bottom: 9px; font-size: 1.3rem; }
+.repository-description { margin-bottom: 20px; color: var(--muted); line-height: 1.45; }
+.repository-meta { display: flex; flex-wrap: wrap; gap: 10px 20px; color: var(--muted); font: 0.72rem 'Trebuchet MS', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; }
+.language::before { display: inline-block; width: 8px; height: 8px; margin-right: 7px; border-radius: 50%; background: var(--green); content: ''; }
+.status { color: var(--muted); font-style: italic; }
+.status.error { color: var(--accent); }
+
+@media (max-width: 520px) {
+  .page-shell { width: min(100% - 28px, 780px); padding-top: 48px; }
+  .page-header { margin-bottom: 40px; }
+  .repository { padding: 18px; }
+}

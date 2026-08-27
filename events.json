@@ -1,0 +1,34 @@
+[
+  {
+    "repository": "microsoft / vscode",
+    "description": "Visual Studio Code is a lightweight but powerful source code editor.",
+    "language": "TypeScript",
+    "stars": "169k",
+    "starredAt": "August 24, 2026",
+    "url": "https://github.com/microsoft/vscode"
+  },
+  {
+    "repository": "public-apis / public-apis",
+    "description": "A collective list of free APIs for use in software and web development.",
+    "language": "Python",
+    "stars": "386k",
+    "starredAt": "August 18, 2026",
+    "url": "https://github.com/public-apis/public-apis"
+  },
+  {
+    "repository": "sindresorhus / awesome",
+    "description": "A curated list of awesome lists.",
+    "language": "Markdown",
+    "stars": "348k",
+    "starredAt": "August 11, 2026",
+    "url": "https://github.com/sindresorhus/awesome"
+  },
+  {
+    "repository": "vercel / next.js",
+    "description": "The React framework for the web, used by many teams to build fast products.",
+    "language": "JavaScript",
+    "stars": "134k",
+    "starredAt": "August 3, 2026",
+    "url": "https://github.com/vercel/next.js"
+  }
+]
